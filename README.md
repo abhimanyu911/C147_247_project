@@ -2,4 +2,4 @@
 A repository to centralize the collaboration and version the code for our group project toward EC ENGR C147/247: Neural Networks and Deep Learning.
 
 
-More details about the environment and startup will be provided as and when the Project details are uploaded and progress is made !
+More details about the environment and startup will be provided as and when the project details are uploaded and progress is made !
