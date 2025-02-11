@@ -3,3 +3,10 @@ A repository to centralize the collaboration and version the code for our group 
 
 
 More details about the environment and startup will be provided as and when the project details are uploaded and progress is made !
+
+
+## Clone locally
+
+```
+git clone https://github.com/abhimanyu911/C147_247_project.git
+```
