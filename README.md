@@ -10,3 +10,8 @@ More details about the environment and startup will be provided as and when the 
 ```
 git clone https://github.com/abhimanyu911/C147_247_project.git
 ```
+
+
+## Resources
+
+1) [DL, NYU - concepts and companion code](https://atcold.github.io/NYU-DLSP20/)
