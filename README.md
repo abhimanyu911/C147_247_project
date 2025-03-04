@@ -9,7 +9,12 @@ More details about the environment and startup will be provided as and when the 
 
 ```
 git clone https://github.com/abhimanyu911/C147_247_project.git
+conda env create -f environment_corrected.yml
+cd emg2qwerty
+mkdir data # and place your dataset here
 ```
+
+
 
 
 ## Resources
