@@ -1,0 +1,4 @@
+emg2qwerty/data/*
+emg2qwerty/logs/*
+emg2qwerty/models/*
+emg2qwerty/emg2qwerty/__pycache__

@@ -1,0 +1,13 @@
+# @package _global_
+module:
+  _target_: emg2qwerty.lightning.DeepCNNCTCModule
+  in_features: 528     # (n_fft // 2 + 1) * 16
+  mlp_features: [384]  # same usage as baseline
+  block_channels: [24, 24, 24, 24]  # example channel widths
+  kernel_width: 13                   # conv kernel size for the 1D blocks
+  dropout_rate: 0.2
+
+datamodule:
+  _target_: emg2qwerty.lightning.WindowedEMGDataModule
+  window_length: 8000
+  padding: [1800, 200]
