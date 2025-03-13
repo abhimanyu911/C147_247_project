@@ -1,3 +1,0 @@
-# @package _global_
-decoder:
-  _target_: emg2qwerty.decoder.CTCGreedyDecoder
