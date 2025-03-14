@@ -100,7 +100,7 @@ def main(config: DictConfig):
     # Instantiate callbacks
     callback_configs = config.get("callbacks", [])
     callbacks = [instantiate(cfg) for cfg in callback_configs]
-    log_dir = log_dir = config.trainer.get("default_root_dir", "emg2qwerty/logs")
+    log_dir = config.trainer.get("default_root_dir", "emg2qwerty/logs")
     csv_logger = CSVLogger(save_dir=log_dir, name="training_logs")
 
     # Initialize trainer

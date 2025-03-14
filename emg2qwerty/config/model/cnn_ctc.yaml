@@ -4,7 +4,7 @@ module:
   in_features: 528     # (n_fft // 2 + 1) * 16
   mlp_features: [384]  # same usage as baseline
   block_channels: [24, 24, 24, 24]  # example channel widths
-  kernel_width: 13                   # conv kernel size for the 1D blocks
+  kernel_width: 15                   # conv kernel size for the 1D blocks
   dropout_rate: 0.2
 
 datamodule:

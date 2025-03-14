@@ -2,10 +2,10 @@
 module:
   _target_: emg2qwerty.lightning.TDSConvCTCModuleWithDropout
   in_features: 528     # (n_fft // 2 + 1) * 16
-  mlp_features: [384]  # same usage as baseline
-  block_channels: [48, 48, 48, 48]
+  mlp_features: [480]  # same usage as baseline
+  block_channels: [24, 24, 24, 24]
   kernel_width: 32     # maintain a large receptive field as in baseline
-  dropout_rate: 0.4
+  dropout_rate: 0.3
   
 datamodule:
   _target_: emg2qwerty.lightning.WindowedEMGDataModule

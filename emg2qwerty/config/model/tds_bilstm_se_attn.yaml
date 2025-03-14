@@ -1,0 +1,19 @@
+# @package _global_
+module:
+  _target_: emg2qwerty.lightning.TDSBiLSTMAttnSECTCModule
+  in_features: 528     # same as your baseline (n_fft//2+1 * 16)
+  mlp_features: [480]  # or bigger if you want
+  block_channels: [24, 24, 24, 24, 24]  # more blocks for deeper TDS
+  kernel_width: 32
+  dropout_rate: 0.30
+  lstm_hidden: 128    # or 384/512 if GPU memory allows
+  lstm_layers: 3
+  num_heads: 4
+  optimizer: ${optimizer}         # same as your base
+  lr_scheduler: ${lr_scheduler}
+  decoder: ${decoder}
+
+datamodule:
+  _target_: emg2qwerty.lightning.WindowedEMGDataModule
+  window_length: 8000
+  padding: [1800, 200]
