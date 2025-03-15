@@ -1115,7 +1115,7 @@ class TDSConvEncoderWithDropoutSE(nn.Module):
 
         blocks = []
         for c in block_channels:
-            assert num_features % c == 0,
+            assert num_features % c == 0
             width = num_features // c
             # TDSConv2dBlockWithDropout = conv + skip + dropout
             blocks.append(TDSConv2dBlockWithDropout(c, width, kernel_width, dropout_rate))
